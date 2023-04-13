@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hhr^7-xrw^ryxal$9l01kzlv(xpnxho@7s4ns+0zcge$2rmsc9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -33,6 +33,8 @@ INSTALLED_APPS = [
     'core',
     'clientes',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://fusion-1980.up.railway.app/']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
